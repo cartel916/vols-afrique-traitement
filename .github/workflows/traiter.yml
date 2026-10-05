@@ -1,0 +1,73 @@
+name: Traitement des journées ADS-B
+
+on:
+  workflow_dispatch:
+    inputs:
+      plan:
+        description: "Fichier de plan du dépôt (lots de journées à traiter)"
+        required: true
+        default: "plans/plan.json"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        env:
+          PLAN: ${{ inputs.plan }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, re
+          p = json.load(open(os.environ["PLAN"]))
+          lots = [{"lot": str(l["id"]), "dates": " ".join(d for d in l["dates"] if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d))}
+                  for l in p["lots"]]
+          print("matrix=" + json.dumps({"include": lots}))
+          PY
+
+  traiter:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Dépendances et grilles de référence
+        run: |
+          pip install -q -r requirements.txt
+          unzip -q grilles.zip -d ref
+          nproc && free -g | head -2 && df -h . | tail -1
+      - name: Traitement du lot ${{ matrix.lot }}
+        env:
+          LOT: ${{ matrix.lot }}
+          DATES: ${{ matrix.dates }}
+        run: python lot.py "$LOT" $DATES
+      - name: Résultats légers (vols, traversées, carte, bilan)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: petits-${{ matrix.lot }}
+          path: out/petits
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Résultats lourds (traces d'origine retenues, positions)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gros-${{ matrix.lot }}
+          path: out/gros
+          retention-days: 4
+          compression-level: 0
+          if-no-files-found: warn

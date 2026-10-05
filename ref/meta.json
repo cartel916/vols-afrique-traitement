@@ -1,0 +1,1481 @@
+{
+ "grille": {
+  "lat0": -72.0,
+  "lon0": -50.0,
+  "res": 0.025,
+  "nrows": 4680,
+  "ncols": 5400
+ },
+ "pays": [
+  {
+   "iso": "",
+   "nom": "Mer / hors pays",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "ZW",
+   "nom": "Zimbabwe",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "ZM",
+   "nom": "Zambie",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "YE",
+   "nom": "Yémen",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "UZ",
+   "nom": "Ouzbékistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "GS",
+   "nom": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IO",
+   "nom": "Territoire britannique de l’océan Indien",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "SH",
+   "nom": "Sainte-Hélène",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "AE",
+   "nom": "Émirats arabes unis",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "UG",
+   "nom": "Ouganda",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "TM",
+   "nom": "Turkménistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "TR",
+   "nom": "Turquie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "TN",
+   "nom": "Tunisie",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "TG",
+   "nom": "Togo",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "TZ",
+   "nom": "Tanzanie",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "TJ",
+   "nom": "Tadjikistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "SY",
+   "nom": "Syrie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "SZ",
+   "nom": "Eswatini",
+   "region": "Afrique australe",
+   "afrique": true
+  },
+  {
+   "iso": "SS",
+   "nom": "Soudan du Sud",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "SD",
+   "nom": "Soudan",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "LK",
+   "nom": "Sri Lanka",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "ES",
+   "nom": "Espagne",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "ZA",
+   "nom": "Afrique du Sud",
+   "region": "Afrique australe",
+   "afrique": true
+  },
+  {
+   "iso": "SO",
+   "nom": "Somalie",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "SO",
+   "nom": "Somalie (Somaliland)",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "SL",
+   "nom": "Sierra Leone",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "SC",
+   "nom": "Seychelles",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "RS",
+   "nom": "Serbie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "SN",
+   "nom": "Sénégal",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "SA",
+   "nom": "Arabie saoudite",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "ST",
+   "nom": "Sao Tomé-et-Principe",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "SM",
+   "nom": "Saint-Marin",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "RW",
+   "nom": "Rwanda",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "RU",
+   "nom": "Russie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "RO",
+   "nom": "Roumanie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "QA",
+   "nom": "Qatar",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "PT",
+   "nom": "Portugal",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "PK",
+   "nom": "Pakistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "OM",
+   "nom": "Oman",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "NG",
+   "nom": "Nigeria",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "NE",
+   "nom": "Niger",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "NP",
+   "nom": "Népal",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "NA",
+   "nom": "Namibie",
+   "region": "Afrique australe",
+   "afrique": true
+  },
+  {
+   "iso": "MZ",
+   "nom": "Mozambique",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "MA",
+   "nom": "Maroc",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "EH",
+   "nom": "Sahara occidental",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "ME",
+   "nom": "Monténégro",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "MC",
+   "nom": "Monaco",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "MU",
+   "nom": "Maurice",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "MR",
+   "nom": "Mauritanie",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "MT",
+   "nom": "Malte",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "ML",
+   "nom": "Mali",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "MV",
+   "nom": "Maldives",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "MW",
+   "nom": "Malawi",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "MG",
+   "nom": "Madagascar",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "MK",
+   "nom": "Macédoine du Nord",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "LY",
+   "nom": "Libye",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "LR",
+   "nom": "Liberia",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "LS",
+   "nom": "Lesotho",
+   "region": "Afrique australe",
+   "afrique": true
+  },
+  {
+   "iso": "LB",
+   "nom": "Liban",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "KG",
+   "nom": "Kirghizistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "KW",
+   "nom": "Koweït",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "XK",
+   "nom": "Kosovo",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "KE",
+   "nom": "Kenya",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "KZ",
+   "nom": "Kazakhstan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "JO",
+   "nom": "Jordanie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IT",
+   "nom": "Italie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IL",
+   "nom": "Israël",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "PS",
+   "nom": "Palestine",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IQ",
+   "nom": "Irak",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IR",
+   "nom": "Iran",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "IN",
+   "nom": "Inde",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "GW",
+   "nom": "Guinée-Bissau",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "GN",
+   "nom": "Guinée",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "GR",
+   "nom": "Grèce",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "GH",
+   "nom": "Ghana",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "GE",
+   "nom": "Géorgie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "GM",
+   "nom": "Gambie",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "GA",
+   "nom": "Gabon",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "YT",
+   "nom": "Mayotte",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "RE",
+   "nom": "La Réunion",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "FR",
+   "nom": "France",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "TF",
+   "nom": "Terres australes et antarctiques françaises",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "ET",
+   "nom": "Éthiopie",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "ER",
+   "nom": "Érythrée",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "GQ",
+   "nom": "Guinée équatoriale",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "EG",
+   "nom": "Égypte",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "DJ",
+   "nom": "Djibouti",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "CY",
+   "nom": "Chypre du Nord",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "CY",
+   "nom": "Chypre",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "HR",
+   "nom": "Croatie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "CI",
+   "nom": "Côte d'Ivoire",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "CD",
+   "nom": "République démocratique du Congo",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "CG",
+   "nom": "République du Congo",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "KM",
+   "nom": "Comores",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "CN",
+   "nom": "République populaire de Chine",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "TD",
+   "nom": "Tchad",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "CF",
+   "nom": "République centrafricaine",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "CV",
+   "nom": "Cap-Vert",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "CM",
+   "nom": "Cameroun",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "BI",
+   "nom": "Burundi",
+   "region": "Afrique de l'Est",
+   "afrique": true
+  },
+  {
+   "iso": "BF",
+   "nom": "Burkina Faso",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "BG",
+   "nom": "Bulgarie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "BR",
+   "nom": "Brésil",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "BW",
+   "nom": "Botswana",
+   "region": "Afrique australe",
+   "afrique": true
+  },
+  {
+   "iso": "BA",
+   "nom": "Bosnie-Herzégovine",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "BJ",
+   "nom": "Bénin",
+   "region": "Afrique de l'Ouest",
+   "afrique": true
+  },
+  {
+   "iso": "BH",
+   "nom": "Bahreïn",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "AZ",
+   "nom": "Azerbaïdjan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "HM",
+   "nom": "îles Heard-et-MacDonald",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "AM",
+   "nom": "Arménie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "AO",
+   "nom": "Angola",
+   "region": "Afrique centrale",
+   "afrique": true
+  },
+  {
+   "iso": "AD",
+   "nom": "Andorre",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "DZ",
+   "nom": "Algérie",
+   "region": "Afrique du Nord",
+   "afrique": true
+  },
+  {
+   "iso": "AL",
+   "nom": "Albanie",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "AF",
+   "nom": "Afghanistan",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "KA",
+   "nom": "glacier de Siachen",
+   "region": "",
+   "afrique": false
+  },
+  {
+   "iso": "AQ",
+   "nom": "Antarctique",
+   "region": "",
+   "afrique": false
+  }
+ ],
+ "firs": [
+  {
+   "id": "",
+   "nom": "Hors FIR africaine"
+  },
+  {
+   "id": "FAJO",
+   "nom": "Johannesburg Océanique"
+  },
+  {
+   "id": "FIMM",
+   "nom": "Maurice"
+  },
+  {
+   "id": "GOOC",
+   "nom": "Dakar Océanique"
+  },
+  {
+   "id": "FNAN",
+   "nom": "Luanda"
+  },
+  {
+   "id": "FMMM",
+   "nom": "Antananarivo"
+  },
+  {
+   "id": "FSSS",
+   "nom": "Seychelles"
+  },
+  {
+   "id": "DAAA",
+   "nom": "Alger"
+  },
+  {
+   "id": "HSSS",
+   "nom": "Khartoum"
+  },
+  {
+   "id": "GOOO",
+   "nom": "Dakar"
+  },
+  {
+   "id": "HLLL",
+   "nom": "Tripoli"
+  },
+  {
+   "id": "FZZA",
+   "nom": "Kinshasa"
+  },
+  {
+   "id": "FCCC",
+   "nom": "Brazzaville"
+  },
+  {
+   "id": "DGAC",
+   "nom": "Accra"
+  },
+  {
+   "id": "FTTT",
+   "nom": "N'Djamena"
+  },
+  {
+   "id": "DRRR",
+   "nom": "Niamey"
+  },
+  {
+   "id": "FQBE",
+   "nom": "Beira"
+  },
+  {
+   "id": "HCSM",
+   "nom": "Mogadiscio"
+  },
+  {
+   "id": "GCCC",
+   "nom": "Canarias"
+  },
+  {
+   "id": "HECC",
+   "nom": "Le Caire"
+  },
+  {
+   "id": "HTDC",
+   "nom": "Dar es Salaam"
+  },
+  {
+   "id": "GVSC",
+   "nom": "Sal Océanique"
+  },
+  {
+   "id": "FAJA",
+   "nom": "Johannesburg"
+  },
+  {
+   "id": "HAAA",
+   "nom": "Addis-Abeba"
+  },
+  {
+   "id": "FACA",
+   "nom": "Le Cap"
+  },
+  {
+   "id": "DNKK",
+   "nom": "Kano"
+  },
+  {
+   "id": "FYWF",
+   "nom": "Windhoek"
+  },
+  {
+   "id": "GMMM",
+   "nom": "Casablanca"
+  },
+  {
+   "id": "GLRB",
+   "nom": "Roberts"
+  },
+  {
+   "id": "FLFI",
+   "nom": "Lusaka"
+  },
+  {
+   "id": "HKNA",
+   "nom": "Nairobi"
+  },
+  {
+   "id": "FBGR",
+   "nom": "Gaborone"
+  },
+  {
+   "id": "FVHF",
+   "nom": "Harare"
+  },
+  {
+   "id": "DTTC",
+   "nom": "Tunis"
+  },
+  {
+   "id": "HUEC",
+   "nom": "Entebbe"
+  },
+  {
+   "id": "HHAA",
+   "nom": "Asmara"
+  },
+  {
+   "id": "FWLL",
+   "nom": "Lilongwe"
+  },
+  {
+   "id": "HJJJ",
+   "nom": "Juba"
+  },
+  {
+   "id": "DIII",
+   "nom": "Abidjan"
+  },
+  {
+   "id": "HBBA",
+   "nom": "Bujumbura"
+  },
+  {
+   "id": "HRYR",
+   "nom": "Kigali"
+  }
+ ],
+ "secteurs": [
+  {
+   "id": "",
+   "nom": "Hors secteur",
+   "fir": ""
+  },
+  {
+   "id": "DGAO",
+   "nom": "Accra Océanique",
+   "fir": "DGAC"
+  },
+  {
+   "id": "GCCO",
+   "nom": "Canarias Océanique",
+   "fir": "GCCC"
+  },
+  {
+   "id": "DAAA-SW",
+   "nom": "Alger Sud Ouest",
+   "fir": "DAAA"
+  },
+  {
+   "id": "FQMA",
+   "nom": "Maputo",
+   "fir": "FQBE"
+  },
+  {
+   "id": "DAAA-SS",
+   "nom": "Alger Sud",
+   "fir": "DAAA"
+  },
+  {
+   "id": "FACA-W",
+   "nom": "Le Cap Ouest",
+   "fir": "FACA"
+  },
+  {
+   "id": "FACA-E",
+   "nom": "Le Cap Est",
+   "fir": "FACA"
+  },
+  {
+   "id": "DAAA-SE",
+   "nom": "Alger Sud Est",
+   "fir": "DAAA"
+  },
+  {
+   "id": "HECC-5",
+   "nom": "Le Caire secteur 5",
+   "fir": "HECC"
+  },
+  {
+   "id": "FAJA-W",
+   "nom": "Johannesburg Ouest",
+   "fir": "FAJA"
+  },
+  {
+   "id": "DNMM",
+   "nom": "Lagos",
+   "fir": "DNKK"
+  },
+  {
+   "id": "FAJA-E",
+   "nom": "Johannesburg Est",
+   "fir": "FAJA"
+  },
+  {
+   "id": "DAAA-SC",
+   "nom": "Alger Sud Centre",
+   "fir": "DAAA"
+  },
+  {
+   "id": "HECC-4",
+   "nom": "Le Caire secteur 4",
+   "fir": "HECC"
+  },
+  {
+   "id": "HECC-6",
+   "nom": "Le Caire secteur 6",
+   "fir": "HECC"
+  },
+  {
+   "id": "HECC-1",
+   "nom": "Le Caire secteur 1",
+   "fir": "HECC"
+  },
+  {
+   "id": "GCCC-RW3",
+   "nom": "Canarias Nord Ouest",
+   "fir": "GCCC"
+  },
+  {
+   "id": "GCCC-RES",
+   "nom": "Canarias Sud Est",
+   "fir": "GCCC"
+  },
+  {
+   "id": "DNKK-W",
+   "nom": "Kano Ouest",
+   "fir": "DNKK"
+  },
+  {
+   "id": "GMMM-E",
+   "nom": "Casablanca Est",
+   "fir": "GMMM"
+  },
+  {
+   "id": "GMMM-S",
+   "nom": "Casablanca Sud",
+   "fir": "GMMM"
+  },
+  {
+   "id": "DAAA-NW",
+   "nom": "Alger Nord Ouest",
+   "fir": "DAAA"
+  },
+  {
+   "id": "FAJA-NE",
+   "nom": "Johannesburg secteur 1",
+   "fir": "FAJA"
+  },
+  {
+   "id": "DAAA-NE",
+   "nom": "Alger Nord Est",
+   "fir": "DAAA"
+  },
+  {
+   "id": "DTTC-S",
+   "nom": "Tunis Sud",
+   "fir": "DTTC"
+  },
+  {
+   "id": "FAJA-C",
+   "nom": "Johannesburg Centre",
+   "fir": "FAJA"
+  },
+  {
+   "id": "GMMM-W",
+   "nom": "Casablanca Ouest",
+   "fir": "GMMM"
+  },
+  {
+   "id": "HECC-2",
+   "nom": "Le Caire secteur 2",
+   "fir": "HECC"
+  },
+  {
+   "id": "DAAA-NC",
+   "nom": "Alger Nord Centre",
+   "fir": "DAAA"
+  },
+  {
+   "id": "DTTC-N",
+   "nom": "Tunis Nord",
+   "fir": "DTTC"
+  },
+  {
+   "id": "HECC-3",
+   "nom": "Le Caire secteur 3",
+   "fir": "HECC"
+  },
+  {
+   "id": "GMAC-WN",
+   "nom": "Agadir Nord Ouest",
+   "fir": "GMMM"
+  },
+  {
+   "id": "GMAC-ON",
+   "nom": "Agadir Océanique Nord",
+   "fir": "GMMM"
+  },
+  {
+   "id": "GMMM-N",
+   "nom": "Casablanca Nord",
+   "fir": "GMMM"
+  },
+  {
+   "id": "FAJA-NW",
+   "nom": "Johannesburg secteur 2",
+   "fir": "FAJA"
+  },
+  {
+   "id": "GMAC-WS",
+   "nom": "Agadir Océanique Sud Ouest",
+   "fir": "GMMM"
+  },
+  {
+   "id": "FAJA-SW",
+   "nom": "Johannesburg secteur 4",
+   "fir": "FAJA"
+  },
+  {
+   "id": "FAJA-SE",
+   "nom": "Johannesburg secteur 3",
+   "fir": "FAJA"
+  },
+  {
+   "id": "GCCC-RNE",
+   "nom": "Canarias Nord Est",
+   "fir": "GCCC"
+  },
+  {
+   "id": "GMAC-OS",
+   "nom": "Agadir Océanique Sud",
+   "fir": "GMMM"
+  },
+  {
+   "id": "GCCC-RC2",
+   "nom": "Canarias Centre",
+   "fir": "GCCC"
+  },
+  {
+   "id": "GCCC-RCW",
+   "nom": "Canarias Centre Ouest",
+   "fir": "GCCC"
+  }
+ ],
+ "fir_manquantes": [],
+ "afrique_iso": [
+  "AO",
+  "BF",
+  "BI",
+  "BJ",
+  "BW",
+  "CD",
+  "CF",
+  "CG",
+  "CI",
+  "CM",
+  "CV",
+  "DJ",
+  "DZ",
+  "EG",
+  "EH",
+  "ER",
+  "ET",
+  "GA",
+  "GH",
+  "GM",
+  "GN",
+  "GQ",
+  "GW",
+  "IO",
+  "KE",
+  "KM",
+  "LR",
+  "LS",
+  "LY",
+  "MA",
+  "MG",
+  "ML",
+  "MR",
+  "MU",
+  "MW",
+  "MZ",
+  "NA",
+  "NE",
+  "NG",
+  "RE",
+  "RW",
+  "SC",
+  "SD",
+  "SH",
+  "SL",
+  "SN",
+  "SO",
+  "SS",
+  "ST",
+  "SZ",
+  "TD",
+  "TF",
+  "TG",
+  "TN",
+  "TZ",
+  "UG",
+  "YT",
+  "ZA",
+  "ZM",
+  "ZW"
+ ],
+ "regions_iso": {
+  "ZW": "Afrique de l'Est",
+  "ZM": "Afrique de l'Est",
+  "IO": "Afrique de l'Est",
+  "SH": "Afrique de l'Ouest",
+  "UG": "Afrique de l'Est",
+  "TN": "Afrique du Nord",
+  "TG": "Afrique de l'Ouest",
+  "TZ": "Afrique de l'Est",
+  "SZ": "Afrique australe",
+  "SS": "Afrique de l'Est",
+  "SD": "Afrique du Nord",
+  "ZA": "Afrique australe",
+  "SO": "Afrique de l'Est",
+  "SL": "Afrique de l'Ouest",
+  "SC": "Afrique de l'Est",
+  "SN": "Afrique de l'Ouest",
+  "ST": "Afrique centrale",
+  "RW": "Afrique de l'Est",
+  "NG": "Afrique de l'Ouest",
+  "NE": "Afrique de l'Ouest",
+  "NA": "Afrique australe",
+  "MZ": "Afrique de l'Est",
+  "MA": "Afrique du Nord",
+  "EH": "Afrique du Nord",
+  "MU": "Afrique de l'Est",
+  "MR": "Afrique de l'Ouest",
+  "ML": "Afrique de l'Ouest",
+  "MW": "Afrique de l'Est",
+  "MG": "Afrique de l'Est",
+  "LY": "Afrique du Nord",
+  "LR": "Afrique de l'Ouest",
+  "LS": "Afrique australe",
+  "KE": "Afrique de l'Est",
+  "GW": "Afrique de l'Ouest",
+  "GN": "Afrique de l'Ouest",
+  "GH": "Afrique de l'Ouest",
+  "GM": "Afrique de l'Ouest",
+  "GA": "Afrique centrale",
+  "YT": "Afrique de l'Est",
+  "RE": "Afrique de l'Est",
+  "TF": "Afrique de l'Est",
+  "ET": "Afrique de l'Est",
+  "ER": "Afrique de l'Est",
+  "GQ": "Afrique centrale",
+  "EG": "Afrique du Nord",
+  "DJ": "Afrique de l'Est",
+  "CI": "Afrique de l'Ouest",
+  "CD": "Afrique centrale",
+  "CG": "Afrique centrale",
+  "KM": "Afrique de l'Est",
+  "TD": "Afrique centrale",
+  "CF": "Afrique centrale",
+  "CV": "Afrique de l'Ouest",
+  "CM": "Afrique centrale",
+  "BI": "Afrique de l'Est",
+  "BF": "Afrique de l'Ouest",
+  "BW": "Afrique australe",
+  "BJ": "Afrique de l'Ouest",
+  "AO": "Afrique centrale",
+  "DZ": "Afrique du Nord"
+ },
+ "noms_pays": {
+  "AD": "Andorre",
+  "AE": "Émirats arabes unis",
+  "AF": "Afghanistan",
+  "AG": "Antigua-et-Barbuda",
+  "AI": "Anguilla",
+  "AL": "Albanie",
+  "AM": "Arménie",
+  "AO": "Angola",
+  "AQ": "Antarctique",
+  "AR": "Argentine",
+  "AS": "Samoa américaines",
+  "AT": "Autriche",
+  "AU": "Australie",
+  "AW": "Aruba",
+  "AZ": "Azerbaïdjan",
+  "BA": "Bosnie-Herzégovine",
+  "BB": "Barbade",
+  "BD": "Bangladesh",
+  "BE": "Belgique",
+  "BF": "Burkina Faso",
+  "BG": "Bulgarie",
+  "BH": "Bahreïn",
+  "BI": "Burundi",
+  "BJ": "Bénin",
+  "BL": "Saint-Barthélemy",
+  "BM": "Bermudes",
+  "BN": "Brunei",
+  "BO": "Bolivie",
+  "BQ": "Caribbean Netherlands",
+  "BR": "Brésil",
+  "BS": "Bahamas",
+  "BT": "Bhoutan",
+  "BW": "Botswana",
+  "BY": "Biélorussie",
+  "BZ": "Belize",
+  "CA": "Canada",
+  "CC": "Cocos (Keeling) Islands",
+  "CD": "République démocratique du Congo",
+  "CF": "République centrafricaine",
+  "CG": "République du Congo",
+  "CH": "Suisse",
+  "CI": "Côte d'Ivoire",
+  "CK": "Îles Cook",
+  "CL": "Chili",
+  "CM": "Cameroun",
+  "CN": "République populaire de Chine",
+  "CO": "Colombie",
+  "CR": "Costa Rica",
+  "CU": "Cuba",
+  "CV": "Cap-Vert",
+  "CW": "Curaçao",
+  "CX": "Christmas Island",
+  "CY": "Chypre du Nord",
+  "CZ": "Tchéquie",
+  "DE": "Allemagne",
+  "DJ": "Djibouti",
+  "DK": "Danemark",
+  "DM": "Dominique",
+  "DO": "République dominicaine",
+  "DZ": "Algérie",
+  "EC": "Équateur",
+  "EE": "Estonie",
+  "EG": "Égypte",
+  "EH": "Sahara occidental",
+  "ER": "Érythrée",
+  "ES": "Espagne",
+  "ET": "Éthiopie",
+  "FI": "Finlande",
+  "FJ": "Fidji",
+  "FK": "îles Malouines",
+  "FM": "États fédérés de Micronésie",
+  "FO": "îles Féroé",
+  "FR": "France",
+  "GA": "Gabon",
+  "GB": "Royaume-Uni",
+  "GD": "Grenade",
+  "GE": "Géorgie",
+  "GF": "Guyane",
+  "GG": "Guernesey",
+  "GH": "Ghana",
+  "GI": "Gibraltar",
+  "GL": "Groenland",
+  "GM": "Gambie",
+  "GN": "Guinée",
+  "GP": "Guadeloupe",
+  "GQ": "Guinée équatoriale",
+  "GR": "Grèce",
+  "GS": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+  "GT": "Guatemala",
+  "GU": "Guam",
+  "GW": "Guinée-Bissau",
+  "GY": "Guyana",
+  "HK": "Hong Kong",
+  "HM": "îles Heard-et-MacDonald",
+  "HN": "Honduras",
+  "HR": "Croatie",
+  "HT": "Haïti",
+  "HU": "Hongrie",
+  "ID": "Indonésie",
+  "IE": "Irlande",
+  "IL": "Israël",
+  "IM": "île de Man",
+  "IN": "Inde",
+  "IO": "Territoire britannique de l'océan Indien",
+  "IQ": "Irak",
+  "IR": "Iran",
+  "IS": "Islande",
+  "IT": "Italie",
+  "JE": "Jersey",
+  "JM": "Jamaïque",
+  "JO": "Jordanie",
+  "JP": "Japon",
+  "KE": "Kenya",
+  "KG": "Kirghizistan",
+  "KH": "Cambodge",
+  "KI": "Kiribati",
+  "KM": "Comores",
+  "KN": "Saint-Christophe-et-Niévès",
+  "KP": "Corée du Nord",
+  "KR": "Corée du Sud",
+  "KW": "Koweït",
+  "KY": "îles Caïmans",
+  "KZ": "Kazakhstan",
+  "LA": "Laos",
+  "LB": "Liban",
+  "LC": "Sainte-Lucie",
+  "LI": "Liechtenstein",
+  "LK": "Sri Lanka",
+  "LR": "Liberia",
+  "LS": "Lesotho",
+  "LT": "Lituanie",
+  "LU": "Luxembourg",
+  "LV": "Lettonie",
+  "LY": "Libye",
+  "MA": "Maroc",
+  "MC": "Monaco",
+  "MD": "Moldavie",
+  "ME": "Monténégro",
+  "MF": "Saint-Martin",
+  "MG": "Madagascar",
+  "MH": "Îles Marshall",
+  "MK": "Macédoine du Nord",
+  "ML": "Mali",
+  "MM": "Birmanie",
+  "MN": "Mongolie",
+  "MO": "Macao",
+  "MP": "îles Mariannes du Nord",
+  "MQ": "Martinique",
+  "MR": "Mauritanie",
+  "MS": "Montserrat",
+  "MT": "Malte",
+  "MU": "Maurice",
+  "MV": "Maldives",
+  "MW": "Malawi",
+  "MX": "Mexique",
+  "MY": "Malaisie",
+  "MZ": "Mozambique",
+  "NA": "Namibie",
+  "NC": "Nouvelle-Calédonie",
+  "NE": "Niger",
+  "NF": "Île Norfolk",
+  "NG": "Nigeria",
+  "NI": "Nicaragua",
+  "NL": "Pays-Bas",
+  "NO": "Norvège",
+  "NP": "Népal",
+  "NR": "Nauru",
+  "NU": "Niue",
+  "NZ": "Nouvelle-Zélande",
+  "OM": "Oman",
+  "PA": "Panama",
+  "PE": "Pérou",
+  "PF": "Polynésie française",
+  "PG": "Papouasie-Nouvelle-Guinée",
+  "PH": "Philippines",
+  "PK": "Pakistan",
+  "PL": "Pologne",
+  "PM": "Saint-Pierre-et-Miquelon",
+  "PN": "Iles Pitcairn",
+  "PR": "Porto Rico",
+  "PS": "Palestine",
+  "PT": "Portugal",
+  "PW": "Palaos",
+  "PY": "Paraguay",
+  "QA": "Qatar",
+  "RE": "La Réunion",
+  "RO": "Roumanie",
+  "RS": "Serbie",
+  "RU": "Russie",
+  "RW": "Rwanda",
+  "SA": "Arabie saoudite",
+  "SB": "Îles Salomon",
+  "SC": "Seychelles",
+  "SD": "Soudan",
+  "SE": "Suède",
+  "SG": "Singapour",
+  "SH": "Sainte-Hélène",
+  "SI": "Slovénie",
+  "SK": "Slovaquie",
+  "SL": "Sierra Leone",
+  "SM": "Saint-Marin",
+  "SN": "Sénégal",
+  "SO": "Somalie",
+  "SR": "Suriname",
+  "SS": "Soudan du Sud",
+  "ST": "Sao Tomé-et-Principe",
+  "SV": "Salvador",
+  "SX": "Saint-Martin",
+  "SY": "Syrie",
+  "SZ": "Eswatini",
+  "TC": "îles Turques-et-Caïques",
+  "TD": "Tchad",
+  "TF": "Terres australes et antarctiques françaises",
+  "TG": "Togo",
+  "TH": "Thaïlande",
+  "TJ": "Tadjikistan",
+  "TK": "Tokelau",
+  "TL": "Timor oriental",
+  "TM": "Turkménistan",
+  "TN": "Tunisie",
+  "TO": "Tonga",
+  "TR": "Turquie",
+  "TT": "Trinité-et-Tobago",
+  "TV": "Tuvalu",
+  "TW": "Taïwan",
+  "TZ": "Tanzanie",
+  "UA": "Ukraine",
+  "UG": "Ouganda",
+  "UM": "United States Minor Outlying Islands",
+  "US": "États-Unis",
+  "UY": "Uruguay",
+  "UZ": "Ouzbékistan",
+  "VA": "Cité du Vatican",
+  "VC": "Saint-Vincent-et-les-Grenadines",
+  "VE": "Venezuela",
+  "VG": "îles Vierges britanniques",
+  "VI": "îles Vierges des États-Unis",
+  "VN": "Viêt Nam",
+  "VU": "Vanuatu",
+  "WF": "Wallis-et-Futuna",
+  "WS": "Samoa",
+  "XK": "Kosovo",
+  "XP": "Paracel Islands (disputed)",
+  "YE": "Yémen",
+  "YT": "Mayotte",
+  "ZA": "Afrique du Sud",
+  "ZM": "Zambie",
+  "ZW": "Zimbabwe",
+  "ZZ": "Pays inconnu",
+  "KA": "glacier de Siachen",
+  "CN-TW": "Taïwan",
+  "AX": "Åland"
+ }
+}
