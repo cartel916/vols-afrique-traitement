@@ -1,4 +1,7 @@
-"""Traite une journée d'archive adsb.lol (globe_history) : ne garde que les vols liés à l'Afrique.
+"""Traite une journée d'archive adsb.lol (globe_history) : ne garde que les vols liés au Brésil.
+
+(Noms de colonnes internes conservés à l'identique de la chaîne africaine : touche_afrique, km_afrique,
+route_afrique… désignent ici le Brésil ; renommage prévu à la livraison — voir NOTES-BRESIL.md.)
 
 Lecture en flux : l'archive (~4 Go) n'est jamais écrite sur le disque. Le processus principal
 lit le tar au fil du téléchargement et distribue les traces aux processus de calcul.
@@ -21,7 +24,9 @@ Version 4 (seconde relecture) : île Nulle et brouillage GPS (excursions bornée
 queues de trace, coupure à tout saut impossible restant), demi-tours dans un trou détectés par le cap,
 objets quasi immobiles écartés, durée exacte, simplification spatio-temporelle (animation fidèle),
 référentiel v4 (La Réunion, Mayotte… africaines).
-Version 5 : second niveau de zones, les SECTEURS (sous-secteurs VATSpy à l'intérieur de 10 FIR).
+Version 5 : second niveau de zones, les SECTEURS (sous-secteurs VATSpy à l'intérieur des FIR ; depuis le
+07/10/2026, secteurs officiels DECEA — 84 dans les 5 FIR brésiliennes — la chaîne ne change pas : la grille
+porte un code numérique par cellule, résolu dans `meta.json`).
 Version 6 (troisième relecture) : excursions terminées par un vrai saut de retour, vitesse de référence robuste,
 escales cachées par temps inexpliqué / atterrissage vu au bord du trou / changement d'indicatif / trou > 16 h,
 départ et arrivée observés seulement si le sens vertical est cohérent, aéroport choisi selon le cap,
@@ -65,9 +70,9 @@ G = META["grille"]
 LAT0, LON0, RES, NROWS, NCOLS = G["lat0"], G["lon0"], G["res"], G["nrows"], G["ncols"]
 LAT1, LON1 = LAT0 + NROWS * RES, LON0 + NCOLS * RES
 PAYS_REGION = np.array([p["region"] for p in META["pays"]], dtype=object)
-REGIONS = ["", "Afrique du Nord", "Afrique de l'Ouest", "Afrique centrale", "Afrique de l'Est", "Afrique australe"]
+REGIONS = ["", "South America", "Central America", "Western Europe"]
 REGION_IDX = np.array([REGIONS.index(r) if r in REGIONS else 0 for r in PAYS_REGION], dtype=np.uint8)
-PAYS_AFRICAIN = np.array([p["afrique"] for p in META["pays"]], dtype=bool)
+PAYS_AFRICAIN = np.array([p["bresil"] for p in META["pays"]], dtype=bool)
 
 TRAITEMENT_VERSION = 9
 R_TERRE_KM = 6371.0
@@ -114,11 +119,11 @@ _ROUTES_AFR = frozenset()
 
 def init_worker():
     global _G_PAYS, _G_FIR, _G_AFR, _G_SEC, _AERO, _ROUTES_AFR
-    f = REF / "indicatifs_afrique.txt"
+    f = REF / "indicatifs_bresil.txt"
     _ROUTES_AFR = frozenset(f.read_text().split()) if f.exists() else frozenset()
     _G_PAYS = np.load(REF / "grille_pays.npy", mmap_mode="r")
     _G_FIR = np.load(REF / "grille_fir.npy", mmap_mode="r")
-    _G_AFR = np.load(REF / "grille_afrique.npy", mmap_mode="r")
+    _G_AFR = np.load(REF / "grille_br.npy", mmap_mode="r")
     _G_SEC = np.load(REF / "grille_secteur.npy", mmap_mode="r")
     codes, lats, lons, rangs, isos, elevs = [], [], [], [], [], []
     for r in csv.DictReader(open(REF / "aeroports.csv", encoding="utf-8")):

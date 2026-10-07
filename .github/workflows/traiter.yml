@@ -1,4 +1,4 @@
-name: Traitement des journées ADS-B
+name: Traitement des journées ADS-B (Brésil)
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
       plan:
         description: "Fichier de plan du dépôt (lots de journées à traiter)"
         required: true
-        default: "plans/plan.json"
+        default: "plans/bresil-2025.json"
 
 permissions:
   contents: read
@@ -44,30 +44,24 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - name: Dépendances et grilles de référence
+      - name: Dépendances
         run: |
           pip install -q -r requirements.txt
-          unzip -q grilles.zip -d ref
-          nproc && free -g | head -2 && df -h . | tail -1
+          nproc && free -g | head -2
       - name: Traitement du lot ${{ matrix.lot }}
         env:
+          VOLS_SORTIE: ${{ github.workspace }}/out
           LOT: ${{ matrix.lot }}
           DATES: ${{ matrix.dates }}
         run: python lot.py "$LOT" $DATES
-      - name: Résultats légers (vols, traversées, carte, bilan)
+      - name: Retrait des traces brutes trop volumineuses
+        if: always()
+        run: rm -f out/*/brut.tar
+      - name: Résultats du lot (out/)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: petits-${{ matrix.lot }}
-          path: out/petits
+          name: bresil-${{ matrix.lot }}
+          path: out/
           retention-days: 7
-          if-no-files-found: warn
-      - name: Résultats lourds (traces d'origine retenues, positions)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: gros-${{ matrix.lot }}
-          path: out/gros
-          retention-days: 4
-          compression-level: 0
           if-no-files-found: warn

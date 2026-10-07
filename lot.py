@@ -1,13 +1,16 @@
-"""Traite un lot de journées d'archives adsb.lol (globe_history) dans un job GitHub Actions.
+"""Traite un lot de journées d'archives adsb.lol (globe_history), sur le Mac comme dans un job GitHub Actions.
 
 Usage : python lot.py <identifiant du lot> 2025-03-01 2025-03-02 …
 
 Pour chaque journée : choix de la variante d'archive (prod, staging, puis les variantes « -0tmp »), taille exacte
 des parts par requête HEAD, traiter_jour.py en flux (l'archive n'est jamais écrite sur le disque), puis rangement
-des sorties :
-  out/petits/<date>/   vols.parquet, passages.parquet, carte.bin, bilan.json
-  out/gros/<date>/     brut.tar (traces d'origine des avions retenus), points.parquet
-Une journée en échec n'arrête pas le lot : out/petits/etat-<lot>.json la signale et le job finit en erreur.
+des sorties, à plat, dans le dossier de la journée :
+  <VOLS_SORTIE>/<date>/   vols.parquet, passages.parquet, carte.bin, bilan.json, points.parquet, brut.tar
+traiter_jour.py écrit lui-même dans <VOLS_SORTIE>/<date>/ et pose bilan.json en dernier : sa présence signale une
+journée complète, et une journée déjà faite est sautée (reprise après interruption). Une journée en échec n'arrête
+pas le lot : <VOLS_SORTIE>/etat-<lot>.json la signale et le job finit en erreur.
+
+VOLS_SORTIE (variable d'environnement) choisit le disque de sortie ; défaut inchangé : out/ à côté de ce script.
 """
 import json
 import os
@@ -20,10 +23,8 @@ from pathlib import Path
 
 ICI = Path(__file__).resolve().parent
 REF = ICI / "ref"
-OUT = ICI / "out"
+OUT = Path(os.environ.get("VOLS_SORTIE", str(ICI / "out")))   # VOLS_SORTIE : disque de sortie (défaut : out/)
 PREFERENCE = ("prod", "staging", "prodtmp", "stagingtmp")
-PETITS = ("vols.parquet", "passages.parquet", "carte.bin", "bilan.json")
-GROS = ("brut.tar", "points.parquet")
 DELAI_JOUR_S = 5400
 
 
@@ -85,17 +86,27 @@ def parts_exactes(depot, tag, mib=None):
     return parts
 
 
-def ranger(date):
-    src = OUT / "tmp" / date
-    for noms, dossier in ((PETITS, "petits"), (GROS, "gros")):
-        (OUT / dossier / date).mkdir(parents=True, exist_ok=True)
-        for f in noms:
-            if (src / f).exists():
-                shutil.move(str(src / f), str(OUT / dossier / date / f))
-    shutil.rmtree(src, ignore_errors=True)
+def deja_faite(date):
+    """Bilan d'une journée déjà traitée (« vols » > 0), sinon None. Sert à la reprise : une journée faite est sautée."""
+    try:
+        b = json.loads((OUT / date / "bilan.json").read_text())
+    except Exception:
+        return None
+    return b if (b.get("vols") or 0) > 0 else None
+
+
+def ecrire_etat(chemin, etat):
+    """Écrit l'état du lot d'un coup (temporaire puis renommage) : jamais de JSON tronqué en cours d'écriture."""
+    tmp = Path(str(chemin) + ".tmp")
+    tmp.write_text(json.dumps(etat, ensure_ascii=False, indent=1))
+    tmp.replace(chemin)
 
 
 def traiter(date, rel, processus):
+    b = deja_faite(date)
+    if b:
+        return {"date": date, "ok": True, "deja": True, "vols": b.get("vols"), "traces": b.get("traces"),
+                "passages": b.get("passages"), "duree_s": b.get("duree_s")}
     if date not in rel:
         return {"date": date, "ok": False, "erreur": "absente des archives adsb.lol"}
     erreur = ""
@@ -109,9 +120,9 @@ def traiter(date, rel, processus):
         taille = sum(n for _, n in parts)
         for essai in range(2):
             t0 = time.time()
-            shutil.rmtree(OUT / "tmp" / date, ignore_errors=True)
+            shutil.rmtree(OUT / date, ignore_errors=True)   # journée partielle éventuelle : on repart de zéro
             cmd = [sys.executable, str(ICI / "traiter_jour.py"), date, "--urls", *[u for u, _ in parts],
-                   "--taille", str(taille), "--tag", tag, "--source", "archive", "--sortie", str(OUT / "tmp"),
+                   "--taille", str(taille), "--tag", tag, "--source", "archive", "--sortie", str(OUT),
                    "--processus", str(processus)]
             try:
                 r = subprocess.run(cmd, capture_output=True, text=True, timeout=DELAI_JOUR_S)
@@ -120,10 +131,9 @@ def traiter(date, rel, processus):
                 code, sortie, err = -1, "", f"délai de {DELAI_JOUR_S} s dépassé"
             if code == 0:
                 b = json.loads(sortie.strip().splitlines()[-1])
-                ranger(date)
                 return {"date": date, "ok": True, "variante": variante, "tag": tag, "octets": b.get("octets_flux"),
-                        "vols": b.get("vols"), "traces": b.get("traces"), "version": b.get("version"),
-                        "duree_s": round(time.time() - t0)}
+                        "vols": b.get("vols"), "passages": b.get("passages"), "traces": b.get("traces"),
+                        "version": b.get("version"), "duree_s": round(time.time() - t0)}
             erreur = f"{variante}, essai {essai + 1}, code {code} : {err.strip()[-300:]}"
             print(f"{date} : {erreur}", flush=True)
             time.sleep(20)
@@ -134,8 +144,8 @@ def main():
     lot, dates = sys.argv[1], sys.argv[2:]
     rel = releases()
     processus = max(2, os.cpu_count() or 2)
-    (OUT / "petits").mkdir(parents=True, exist_ok=True)
-    (OUT / "gros").mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    chemin_etat = OUT / f"etat-{lot}.json"
     etat = []
     for date in dates:
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
@@ -144,7 +154,7 @@ def main():
         r = traiter(date, rel, processus)
         etat.append(r)
         print(json.dumps(r, ensure_ascii=False), flush=True)
-        (OUT / "petits" / f"etat-{lot}.json").write_text(json.dumps(etat, ensure_ascii=False, indent=1))
+        ecrire_etat(chemin_etat, etat)
     resume = os.environ.get("GITHUB_STEP_SUMMARY")
     if resume:
         with open(resume, "a") as f:

@@ -1,1229 +1,1954 @@
 {
  "grille": {
-  "lat0": -72.0,
-  "lon0": -50.0,
+  "lat0": -40.0,
+  "lon0": -80.0,
   "res": 0.025,
-  "nrows": 4680,
-  "ncols": 5400
+  "nrows": 1920,
+  "ncols": 2880
+ },
+ "source": {
+  "fir": "DECEA ICA:fir (WFS geoaisweb.decea.mil.br, EPSG:4326)",
+  "secteurs": "DECEA ICA:SETOR_FIR (WFS geoaisweb.decea.mil.br, EPSG:4326)",
+  "pays": "Natural Earth 50m",
+  "aeroports": "OurAirports",
+  "indicatifs": "VRS standing-data"
  },
  "pays": [
   {
    "iso": "",
    "nom": "Mer / hors pays",
    "region": "",
-   "afrique": false
+   "bresil": false
   },
   {
-   "iso": "ZW",
-   "nom": "Zimbabwe",
-   "region": "Afrique de l'Est",
-   "afrique": true
+   "iso": "VE",
+   "nom": "Venezuela",
+   "region": "South America",
+   "bresil": false
   },
   {
-   "iso": "ZM",
-   "nom": "Zambie",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "YE",
-   "nom": "Yémen",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "UZ",
-   "nom": "Ouzbékistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "GS",
-   "nom": "Géorgie du Sud-et-les Îles Sandwich du Sud",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IO",
-   "nom": "Territoire britannique de l’océan Indien",
-   "region": "Afrique de l'Est",
-   "afrique": true
+   "iso": "UY",
+   "nom": "Uruguay",
+   "region": "South America",
+   "bresil": false
   },
   {
    "iso": "SH",
    "nom": "Sainte-Hélène",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
+   "region": "Western Africa",
+   "bresil": false
   },
   {
-   "iso": "AE",
-   "nom": "Émirats arabes unis",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "UG",
-   "nom": "Ouganda",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "TM",
-   "nom": "Turkménistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "TR",
-   "nom": "Turquie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "TN",
-   "nom": "Tunisie",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "TG",
-   "nom": "Togo",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "TZ",
-   "nom": "Tanzanie",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "TJ",
-   "nom": "Tadjikistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "SY",
-   "nom": "Syrie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "SZ",
-   "nom": "Eswatini",
-   "region": "Afrique australe",
-   "afrique": true
-  },
-  {
-   "iso": "SS",
-   "nom": "Soudan du Sud",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "SD",
-   "nom": "Soudan",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "LK",
-   "nom": "Sri Lanka",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "ES",
-   "nom": "Espagne",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "ZA",
-   "nom": "Afrique du Sud",
-   "region": "Afrique australe",
-   "afrique": true
-  },
-  {
-   "iso": "SO",
-   "nom": "Somalie",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "SO",
-   "nom": "Somalie (Somaliland)",
-   "region": "Afrique de l'Est",
-   "afrique": true
+   "iso": "SR",
+   "nom": "Suriname",
+   "region": "South America",
+   "bresil": false
   },
   {
    "iso": "SL",
    "nom": "Sierra Leone",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
+   "region": "Western Africa",
+   "bresil": false
   },
   {
-   "iso": "SC",
-   "nom": "Seychelles",
-   "region": "Afrique de l'Est",
-   "afrique": true
+   "iso": "PE",
+   "nom": "Pérou",
+   "region": "South America",
+   "bresil": false
   },
   {
-   "iso": "RS",
-   "nom": "Serbie",
-   "region": "",
-   "afrique": false
+   "iso": "PY",
+   "nom": "Paraguay",
+   "region": "South America",
+   "bresil": false
   },
   {
-   "iso": "SN",
-   "nom": "Sénégal",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "SA",
-   "nom": "Arabie saoudite",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "ST",
-   "nom": "Sao Tomé-et-Principe",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "SM",
-   "nom": "Saint-Marin",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "RW",
-   "nom": "Rwanda",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "RU",
-   "nom": "Russie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "RO",
-   "nom": "Roumanie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "QA",
-   "nom": "Qatar",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "PT",
-   "nom": "Portugal",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "PK",
-   "nom": "Pakistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "OM",
-   "nom": "Oman",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "NG",
-   "nom": "Nigeria",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "NE",
-   "nom": "Niger",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "NP",
-   "nom": "Népal",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "NA",
-   "nom": "Namibie",
-   "region": "Afrique australe",
-   "afrique": true
-  },
-  {
-   "iso": "MZ",
-   "nom": "Mozambique",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "MA",
-   "nom": "Maroc",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "EH",
-   "nom": "Sahara occidental",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "ME",
-   "nom": "Monténégro",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "MC",
-   "nom": "Monaco",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "MU",
-   "nom": "Maurice",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "MR",
-   "nom": "Mauritanie",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "MT",
-   "nom": "Malte",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "ML",
-   "nom": "Mali",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "MV",
-   "nom": "Maldives",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "MW",
-   "nom": "Malawi",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "MG",
-   "nom": "Madagascar",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "MK",
-   "nom": "Macédoine du Nord",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "LY",
-   "nom": "Libye",
-   "region": "Afrique du Nord",
-   "afrique": true
+   "iso": "PA",
+   "nom": "Panama",
+   "region": "Central America",
+   "bresil": false
   },
   {
    "iso": "LR",
    "nom": "Liberia",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
+   "region": "Western Africa",
+   "bresil": false
   },
   {
-   "iso": "LS",
-   "nom": "Lesotho",
-   "region": "Afrique australe",
-   "afrique": true
-  },
-  {
-   "iso": "LB",
-   "nom": "Liban",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "KG",
-   "nom": "Kirghizistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "KW",
-   "nom": "Koweït",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "XK",
-   "nom": "Kosovo",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "KE",
-   "nom": "Kenya",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "KZ",
-   "nom": "Kazakhstan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "JO",
-   "nom": "Jordanie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IT",
-   "nom": "Italie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IL",
-   "nom": "Israël",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "PS",
-   "nom": "Palestine",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IQ",
-   "nom": "Irak",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IR",
-   "nom": "Iran",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "IN",
-   "nom": "Inde",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "GW",
-   "nom": "Guinée-Bissau",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
+   "iso": "GY",
+   "nom": "Guyana",
+   "region": "South America",
+   "bresil": false
   },
   {
    "iso": "GN",
    "nom": "Guinée",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "GR",
-   "nom": "Grèce",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "GH",
-   "nom": "Ghana",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "GE",
-   "nom": "Géorgie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "GM",
-   "nom": "Gambie",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "GA",
-   "nom": "Gabon",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "YT",
-   "nom": "Mayotte",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "RE",
-   "nom": "La Réunion",
-   "region": "Afrique de l'Est",
-   "afrique": true
+   "region": "Western Africa",
+   "bresil": false
   },
   {
    "iso": "FR",
    "nom": "France",
-   "region": "",
-   "afrique": false
+   "region": "Western Europe",
+   "bresil": false
   },
   {
-   "iso": "TF",
-   "nom": "Terres australes et antarctiques françaises",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "ET",
-   "nom": "Éthiopie",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "ER",
-   "nom": "Érythrée",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "GQ",
-   "nom": "Guinée équatoriale",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "EG",
-   "nom": "Égypte",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "DJ",
-   "nom": "Djibouti",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "CY",
-   "nom": "Chypre du Nord",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "CY",
-   "nom": "Chypre",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "HR",
-   "nom": "Croatie",
-   "region": "",
-   "afrique": false
+   "iso": "EC",
+   "nom": "Équateur",
+   "region": "South America",
+   "bresil": false
   },
   {
    "iso": "CI",
    "nom": "Côte d'Ivoire",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
+   "region": "Western Africa",
+   "bresil": false
   },
   {
-   "iso": "CD",
-   "nom": "République démocratique du Congo",
-   "region": "Afrique centrale",
-   "afrique": true
+   "iso": "CO",
+   "nom": "Colombie",
+   "region": "South America",
+   "bresil": false
   },
   {
-   "iso": "CG",
-   "nom": "République du Congo",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "KM",
-   "nom": "Comores",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "CN",
-   "nom": "République populaire de Chine",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "TD",
-   "nom": "Tchad",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "CF",
-   "nom": "République centrafricaine",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "CV",
-   "nom": "Cap-Vert",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "CM",
-   "nom": "Cameroun",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "BI",
-   "nom": "Burundi",
-   "region": "Afrique de l'Est",
-   "afrique": true
-  },
-  {
-   "iso": "BF",
-   "nom": "Burkina Faso",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "BG",
-   "nom": "Bulgarie",
-   "region": "",
-   "afrique": false
+   "iso": "CL",
+   "nom": "Chili",
+   "region": "South America",
+   "bresil": false
   },
   {
    "iso": "BR",
    "nom": "Brésil",
-   "region": "",
-   "afrique": false
+   "region": "South America",
+   "bresil": true
   },
   {
-   "iso": "BW",
-   "nom": "Botswana",
-   "region": "Afrique australe",
-   "afrique": true
+   "iso": "BO",
+   "nom": "Bolivie",
+   "region": "South America",
+   "bresil": false
   },
   {
-   "iso": "BA",
-   "nom": "Bosnie-Herzégovine",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "BJ",
-   "nom": "Bénin",
-   "region": "Afrique de l'Ouest",
-   "afrique": true
-  },
-  {
-   "iso": "BH",
-   "nom": "Bahreïn",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "AZ",
-   "nom": "Azerbaïdjan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "HM",
-   "nom": "îles Heard-et-MacDonald",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "AM",
-   "nom": "Arménie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "AO",
-   "nom": "Angola",
-   "region": "Afrique centrale",
-   "afrique": true
-  },
-  {
-   "iso": "AD",
-   "nom": "Andorre",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "DZ",
-   "nom": "Algérie",
-   "region": "Afrique du Nord",
-   "afrique": true
-  },
-  {
-   "iso": "AL",
-   "nom": "Albanie",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "AF",
-   "nom": "Afghanistan",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "KA",
-   "nom": "glacier de Siachen",
-   "region": "",
-   "afrique": false
-  },
-  {
-   "iso": "AQ",
-   "nom": "Antarctique",
-   "region": "",
-   "afrique": false
+   "iso": "AR",
+   "nom": "Argentine",
+   "region": "South America",
+   "bresil": false
   }
  ],
  "firs": [
   {
    "id": "",
-   "nom": "Hors FIR africaine"
+   "nom": "Hors FIR brésilienne",
+   "aire_km2": 17423603.6
   },
   {
-   "id": "FAJO",
-   "nom": "Johannesburg Océanique"
+   "id": "SBAO",
+   "nom": "Atlântico",
+   "aire_km2": 12073553.6
   },
   {
-   "id": "FIMM",
-   "nom": "Maurice"
+   "id": "SBAZ",
+   "nom": "Amazônica",
+   "aire_km2": 4947133.1
   },
   {
-   "id": "GOOC",
-   "nom": "Dakar Océanique"
+   "id": "SBRE",
+   "nom": "Recife",
+   "aire_km2": 2502735.3
   },
   {
-   "id": "FNAN",
-   "nom": "Luanda"
+   "id": "SBCW",
+   "nom": "Curitiba",
+   "aire_km2": 1725012.2
   },
   {
-   "id": "FMMM",
-   "nom": "Antananarivo"
-  },
-  {
-   "id": "FSSS",
-   "nom": "Seychelles"
-  },
-  {
-   "id": "DAAA",
-   "nom": "Alger"
-  },
-  {
-   "id": "HSSS",
-   "nom": "Khartoum"
-  },
-  {
-   "id": "GOOO",
-   "nom": "Dakar"
-  },
-  {
-   "id": "HLLL",
-   "nom": "Tripoli"
-  },
-  {
-   "id": "FZZA",
-   "nom": "Kinshasa"
-  },
-  {
-   "id": "FCCC",
-   "nom": "Brazzaville"
-  },
-  {
-   "id": "DGAC",
-   "nom": "Accra"
-  },
-  {
-   "id": "FTTT",
-   "nom": "N'Djamena"
-  },
-  {
-   "id": "DRRR",
-   "nom": "Niamey"
-  },
-  {
-   "id": "FQBE",
-   "nom": "Beira"
-  },
-  {
-   "id": "HCSM",
-   "nom": "Mogadiscio"
-  },
-  {
-   "id": "GCCC",
-   "nom": "Canarias"
-  },
-  {
-   "id": "HECC",
-   "nom": "Le Caire"
-  },
-  {
-   "id": "HTDC",
-   "nom": "Dar es Salaam"
-  },
-  {
-   "id": "GVSC",
-   "nom": "Sal Océanique"
-  },
-  {
-   "id": "FAJA",
-   "nom": "Johannesburg"
-  },
-  {
-   "id": "HAAA",
-   "nom": "Addis-Abeba"
-  },
-  {
-   "id": "FACA",
-   "nom": "Le Cap"
-  },
-  {
-   "id": "DNKK",
-   "nom": "Kano"
-  },
-  {
-   "id": "FYWF",
-   "nom": "Windhoek"
-  },
-  {
-   "id": "GMMM",
-   "nom": "Casablanca"
-  },
-  {
-   "id": "GLRB",
-   "nom": "Roberts"
-  },
-  {
-   "id": "FLFI",
-   "nom": "Lusaka"
-  },
-  {
-   "id": "HKNA",
-   "nom": "Nairobi"
-  },
-  {
-   "id": "FBGR",
-   "nom": "Gaborone"
-  },
-  {
-   "id": "FVHF",
-   "nom": "Harare"
-  },
-  {
-   "id": "DTTC",
-   "nom": "Tunis"
-  },
-  {
-   "id": "HUEC",
-   "nom": "Entebbe"
-  },
-  {
-   "id": "HHAA",
-   "nom": "Asmara"
-  },
-  {
-   "id": "FWLL",
-   "nom": "Lilongwe"
-  },
-  {
-   "id": "HJJJ",
-   "nom": "Juba"
-  },
-  {
-   "id": "DIII",
-   "nom": "Abidjan"
-  },
-  {
-   "id": "HBBA",
-   "nom": "Bujumbura"
-  },
-  {
-   "id": "HRYR",
-   "nom": "Kigali"
+   "id": "SBBS",
+   "nom": "Brasília",
+   "aire_km2": 1213000.0
   }
  ],
  "secteurs": [
   {
    "id": "",
+   "code": "",
    "nom": "Hors secteur",
-   "fir": ""
+   "fir": "",
+   "fir_source": "",
+   "n_polygones": 0,
+   "aire_km2": 0.0,
+   "limites_verticales": []
   },
   {
-   "id": "DGAO",
-   "nom": "Accra Océanique",
-   "fir": "DGAC"
+   "id": "SBAO_08",
+   "code": "SBAO_08",
+   "nom": "Atlântico SECT 08",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 7404518.9,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_08",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCO",
-   "nom": "Canarias Océanique",
-   "fir": "GCCC"
+   "id": "SBAO_07",
+   "code": "SBAO_07",
+   "nom": "Atlântico SECT 07",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 2683898.6,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_07",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-SW",
-   "nom": "Alger Sud Ouest",
-   "fir": "DAAA"
+   "id": "SBAO_01",
+   "code": "SBAO_01",
+   "nom": "Atlântico SECT 01",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 585010.6,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_01",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FQMA",
-   "nom": "Maputo",
-   "fir": "FQBE"
+   "id": "SBAZ_10",
+   "code": "SBAZ_10",
+   "nom": "Amazônica SECT 10",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 544720.4,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_10",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-SS",
-   "nom": "Alger Sud",
-   "fir": "DAAA"
+   "id": "SBAZ_02",
+   "code": "SBAZ_02",
+   "nom": "Amazônica SECT 02",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 475591.6,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_02",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FACA-W",
-   "nom": "Le Cap Ouest",
-   "fir": "FACA"
+   "id": "SBRE_01",
+   "code": "SBRE_01",
+   "nom": "Recife SECT 01",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 436910.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_01",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FACA-E",
-   "nom": "Le Cap Est",
-   "fir": "FACA"
+   "id": "SBRE_02",
+   "code": "SBRE_02",
+   "nom": "Recife SECT 02",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 430162.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_02",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-SE",
-   "nom": "Alger Sud Est",
-   "fir": "DAAA"
+   "id": "SBAZ_12",
+   "code": "SBAZ_12",
+   "nom": "Amazônica SECT 12",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 411538.8,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_12",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-5",
-   "nom": "Le Caire secteur 5",
-   "fir": "HECC"
+   "id": "SBAZ_09",
+   "code": "SBAZ_09",
+   "nom": "Amazônica SECT 09",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 392664.0,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_09",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-W",
-   "nom": "Johannesburg Ouest",
-   "fir": "FAJA"
+   "id": "SBAZ_06",
+   "code": "SBAZ_06",
+   "nom": "Amazônica SECT 06",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 373753.0,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_06",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DNMM",
-   "nom": "Lagos",
-   "fir": "DNKK"
+   "id": "SBAO_05",
+   "code": "SBAO_05",
+   "nom": "Atlântico SECT 05",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 369581.7,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_05",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-E",
-   "nom": "Johannesburg Est",
-   "fir": "FAJA"
+   "id": "SBAZ_04",
+   "code": "SBAZ_04",
+   "nom": "Amazônica SECT 04",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 358802.2,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_04",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-SC",
-   "nom": "Alger Sud Centre",
-   "fir": "DAAA"
+   "id": "SBAO_06",
+   "code": "SBAO_06",
+   "nom": "Atlântico SECT 06",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 349814.6,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_06",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-4",
-   "nom": "Le Caire secteur 4",
-   "fir": "HECC"
+   "id": "SBAZ_05",
+   "code": "SBAZ_05",
+   "nom": "Amazônica SECT 05",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 339535.8,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_05",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-6",
-   "nom": "Le Caire secteur 6",
-   "fir": "HECC"
+   "id": "SBAO_02",
+   "code": "SBAO_02",
+   "nom": "Atlântico SECT 02",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 306868.2,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_02",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-1",
-   "nom": "Le Caire secteur 1",
-   "fir": "HECC"
+   "id": "SBAZ_03",
+   "code": "SBAZ_03",
+   "nom": "Amazônica SECT 03",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 302867.1,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_03",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCC-RW3",
-   "nom": "Canarias Nord Ouest",
-   "fir": "GCCC"
+   "id": "SBAZ_11",
+   "code": "SBAZ_11",
+   "nom": "Amazônica SECT 11",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 271706.1,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_11",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCC-RES",
-   "nom": "Canarias Sud Est",
-   "fir": "GCCC"
+   "id": "SBAZ_01",
+   "code": "SBAZ_01",
+   "nom": "Amazônica SECT 01",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 269836.8,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_01",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DNKK-W",
-   "nom": "Kano Ouest",
-   "fir": "DNKK"
+   "id": "SBAZ_13",
+   "code": "SBAZ_13",
+   "nom": "Amazônica SECT 13",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 254802.3,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_13",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMMM-E",
-   "nom": "Casablanca Est",
-   "fir": "GMMM"
+   "id": "SBCW_01",
+   "code": "SBCW_01",
+   "nom": "Curitiba SECT 01",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 215043.6,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_01",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMMM-S",
-   "nom": "Casablanca Sud",
-   "fir": "GMMM"
+   "id": "SBAZ_07",
+   "code": "SBAZ_07",
+   "nom": "Amazônica SECT 07",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 248735.6,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_07",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-NW",
-   "nom": "Alger Nord Ouest",
-   "fir": "DAAA"
+   "id": "SBAZ_14",
+   "code": "SBAZ_14",
+   "nom": "Amazônica SECT 14",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 239396.1,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_14",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-NE",
-   "nom": "Johannesburg secteur 1",
-   "fir": "FAJA"
+   "id": "SBAZ_08",
+   "code": "SBAZ_08",
+   "nom": "Amazônica SECT 08",
+   "fir": "SBAZ",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 225422.4,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_08",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-NE",
-   "nom": "Alger Nord Est",
-   "fir": "DAAA"
+   "id": "SBRE_04",
+   "code": "SBRE_04",
+   "nom": "Recife SECT 04",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 222794.3,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_04",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DTTC-S",
-   "nom": "Tunis Sud",
-   "fir": "DTTC"
+   "id": "SBCW_06",
+   "code": "SBCW_06",
+   "nom": "Curitiba SECT 06",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 112403.4,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_06",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-C",
-   "nom": "Johannesburg Centre",
-   "fir": "FAJA"
+   "id": "SBAZ_15A",
+   "code": "SBAZ_15A",
+   "nom": "Amazônica SECT 15A",
+   "fir": "SBAZ",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 202548.4,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_15A",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMMM-W",
-   "nom": "Casablanca Ouest",
-   "fir": "GMMM"
+   "id": "SBAO_03",
+   "code": "SBAO_03",
+   "nom": "Atlântico SECT 03",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 210013.0,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_03",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-2",
-   "nom": "Le Caire secteur 2",
-   "fir": "HECC"
+   "id": "SBCW_02",
+   "code": "SBCW_02",
+   "nom": "Curitiba SECT 02",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 177652.3,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_02",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DAAA-NC",
-   "nom": "Alger Nord Centre",
-   "fir": "DAAA"
+   "id": "SBRE_08",
+   "code": "SBRE_08",
+   "nom": "Recife SECT 08",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 189137.1,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_08",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "DTTC-N",
-   "nom": "Tunis Nord",
-   "fir": "DTTC"
+   "id": "SBRE_05",
+   "code": "SBRE_05",
+   "nom": "Recife SECT 05",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 187563.6,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_05",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "HECC-3",
-   "nom": "Le Caire secteur 3",
-   "fir": "HECC"
+   "id": "SBBS_15",
+   "code": "SBBS_15",
+   "nom": "Brasília SECT 15",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 172054.7,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_15",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMAC-WN",
-   "nom": "Agadir Nord Ouest",
-   "fir": "GMMM"
+   "id": "SBAO_04",
+   "code": "SBAO_04",
+   "nom": "Atlântico SECT 04",
+   "fir": "SBAO",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 163848.1,
+   "limites_verticales": [
+    {
+     "ident": "SBAO_04",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMAC-ON",
-   "nom": "Agadir Océanique Nord",
-   "fir": "GMMM"
+   "id": "SBRE_09",
+   "code": "SBRE_09",
+   "nom": "Recife SECT 09",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 158497.1,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_09",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMMM-N",
-   "nom": "Casablanca Nord",
-   "fir": "GMMM"
+   "id": "SBCW_07",
+   "code": "SBCW_07",
+   "nom": "Curitiba SECT 07",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 147556.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_07",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-NW",
-   "nom": "Johannesburg secteur 2",
-   "fir": "FAJA"
+   "id": "SBCW_14",
+   "code": "SBCW_14",
+   "nom": "Curitiba SECT 14",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 147177.6,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_14",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMAC-WS",
-   "nom": "Agadir Océanique Sud Ouest",
-   "fir": "GMMM"
+   "id": "SBRE_06F",
+   "code": "SBRE_06F",
+   "nom": "Recife SECT 06F",
+   "fir": "SBRE",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 141315.4,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_06F",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-SW",
-   "nom": "Johannesburg secteur 4",
-   "fir": "FAJA"
+   "id": "SBRE_15",
+   "code": "SBRE_15",
+   "nom": "Recife SECT 15",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 128236.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_15",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "FAJA-SE",
-   "nom": "Johannesburg secteur 3",
-   "fir": "FAJA"
+   "id": "SBRE_11",
+   "code": "SBRE_11",
+   "nom": "Recife SECT 11",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 127844.3,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_11",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCC-RNE",
-   "nom": "Canarias Nord Est",
-   "fir": "GCCC"
+   "id": "SBBS_14A",
+   "code": "SBBS_14A",
+   "nom": "Brasília SECT 14A",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 122512.3,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_14A",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GMAC-OS",
-   "nom": "Agadir Océanique Sud",
-   "fir": "GMMM"
+   "id": "SBCW_04",
+   "code": "SBCW_04",
+   "nom": "Curitiba SECT 04",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 108777.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_04",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCC-RC2",
-   "nom": "Canarias Centre",
-   "fir": "GCCC"
+   "id": "SBCW_12",
+   "code": "SBCW_12",
+   "nom": "Curitiba SECT 12",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 104869.3,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_12",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   },
   {
-   "id": "GCCC-RCW",
-   "nom": "Canarias Centre Ouest",
-   "fir": "GCCC"
+   "id": "SBRE_03",
+   "code": "SBRE_03",
+   "nom": "Recife SECT 03",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 102382.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_03",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_14B",
+   "code": "SBBS_14B",
+   "nom": "Brasília SECT 14B",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 99467.8,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_14B",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_16",
+   "code": "SBCW_16",
+   "nom": "Curitiba SECT 16",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 89945.6,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_16",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_14",
+   "code": "SBRE_14",
+   "nom": "Recife SECT 14",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 94317.6,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_14",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_15",
+   "code": "SBCW_15",
+   "nom": "Curitiba SECT 15",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 88591.0,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_15",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_07",
+   "code": "SBRE_07",
+   "nom": "Recife SECT 07",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 92554.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_07",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_16",
+   "code": "SBBS_16",
+   "nom": "Brasília SECT 16",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 90007.0,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_16",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_08",
+   "code": "SBCW_08",
+   "nom": "Curitiba SECT 08",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 83905.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_08",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_13",
+   "code": "SBBS_13",
+   "nom": "Brasília SECT 13",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 84951.4,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_13",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_06F",
+   "code": "SBCW_06F",
+   "nom": "Curitiba SECT 06F",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 78535.6,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_06F",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_11",
+   "code": "SBBS_11",
+   "nom": "Brasília SECT 11",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 78639.3,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_11",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_01B",
+   "code": "SBBS_01B",
+   "nom": "Brasília SECT 01BL",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 2,
+   "aire_km2": 70486.8,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_01BL",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 350,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL350",
+     "emenda": "2026-10-01Z"
+    },
+    {
+     "ident": "SBBS_01BU",
+     "bas_valeur": 350,
+     "bas_unite": "STD",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "STD350-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_05",
+   "code": "SBCW_05",
+   "nom": "Curitiba SECT 05",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 64665.7,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_05",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_12",
+   "code": "SBBS_12",
+   "nom": "Brasília SECT 12",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 67408.9,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_12",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_17",
+   "code": "SBCW_17",
+   "nom": "Curitiba SECT 17",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 57319.7,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_17",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_03",
+   "code": "SBCW_03",
+   "nom": "Curitiba SECT 03",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 55647.2,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_03",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_13",
+   "code": "SBCW_13",
+   "nom": "Curitiba SECT 13",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 55280.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_13",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_18",
+   "code": "SBCW_18",
+   "nom": "Curitiba SECT 18",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 41233.7,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_18",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_01A",
+   "code": "SBBS_01A",
+   "nom": "Brasília SECT 01AL",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 2,
+   "aire_km2": 49117.8,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_01AL",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 350,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL350",
+     "emenda": "2026-10-01Z"
+    },
+    {
+     "ident": "SBBS_01AU",
+     "bas_valeur": 350,
+     "bas_unite": "STD",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "STD350-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_06",
+   "code": "SBRE_06",
+   "nom": "Recife SECT 06",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 51065.0,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_06",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_07F",
+   "code": "SBRE_07F",
+   "nom": "Recife SECT 07F",
+   "fir": "SBRE",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 48844.5,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_07F",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_02",
+   "code": "SBBS_02",
+   "nom": "Brasília SECT 02L",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 2,
+   "aire_km2": 45876.0,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_02L",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 350,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL350",
+     "emenda": "2026-10-01Z"
+    },
+    {
+     "ident": "SBBS_02U",
+     "bas_valeur": 350,
+     "bas_unite": "STD",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "STD350-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_11",
+   "code": "SBCW_11",
+   "nom": "Curitiba SECT 11",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 44114.5,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_11",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_17",
+   "code": "SBBS_17",
+   "nom": "Brasília SECT 17",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 42617.8,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_17",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_09",
+   "code": "SBBS_09",
+   "nom": "Brasília SECT 09",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 38342.9,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_09",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_10",
+   "code": "SBRE_10",
+   "nom": "Recife SECT 10",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 36701.1,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_10",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBAZ_15B",
+   "code": "SBAZ_15B",
+   "nom": "Amazônica SECT 15B",
+   "fir": "SBAZ",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 35212.4,
+   "limites_verticales": [
+    {
+     "ident": "SBAZ_15B",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_18",
+   "code": "SBBS_18",
+   "nom": "Brasília SECT 18",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 33770.5,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_18",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_12",
+   "code": "SBRE_12",
+   "nom": "Recife SECT 12",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 33500.4,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_12",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_08",
+   "code": "SBBS_08",
+   "nom": "Brasília SECT 08",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 28129.4,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_08",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_10",
+   "code": "SBCW_10",
+   "nom": "Curitiba SECT 10",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 25462.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_10",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_07A",
+   "code": "SBBS_07A",
+   "nom": "Brasília SECT 07A",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 25871.5,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_07A",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_03",
+   "code": "SBBS_03",
+   "nom": "Brasília SECT 03L",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 2,
+   "aire_km2": 24292.6,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_03L",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 350,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL350",
+     "emenda": "2026-10-01Z"
+    },
+    {
+     "ident": "SBBS_03U",
+     "bas_valeur": 350,
+     "bas_unite": "STD",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "STD350-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_10A",
+   "code": "SBBS_10A",
+   "nom": "Brasília SECT 10A",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 24171.0,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_10A",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_06",
+   "code": "SBBS_06",
+   "nom": "Brasília SECT 06",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 23949.3,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_06",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_05",
+   "code": "SBBS_05",
+   "nom": "Brasília SECT 05",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 23233.9,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_05",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBRE_13",
+   "code": "SBRE_13",
+   "nom": "Recife SECT 13",
+   "fir": "SBRE",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 20910.8,
+   "limites_verticales": [
+    {
+     "ident": "SBRE_13",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_10B",
+   "code": "SBBS_10B",
+   "nom": "Brasília SECT 10B",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 19864.5,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_10B",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_10C",
+   "code": "SBBS_10C",
+   "nom": "Brasília SECT 10C",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 19551.9,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_10C",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_09",
+   "code": "SBCW_09",
+   "nom": "Curitiba SECT 09",
+   "fir": "SBCW",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 17479.8,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_09",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_04",
+   "code": "SBBS_04",
+   "nom": "Brasília SECT 04",
+   "fir": "SBBS",
+   "fir_source": "relatedfir",
+   "n_polygones": 1,
+   "aire_km2": 16166.1,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_04",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBBS_07B",
+   "code": "SBBS_07B",
+   "nom": "Brasília SECT 07B",
+   "fir": "SBBS",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 12516.6,
+   "limites_verticales": [
+    {
+     "ident": "SBBS_07B",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
+  },
+  {
+   "id": "SBCW_18F",
+   "code": "SBCW_18F",
+   "nom": "Curitiba SECT 18F",
+   "fir": "SBCW",
+   "fir_source": "geometrie",
+   "n_polygones": 1,
+   "aire_km2": 9349.2,
+   "limites_verticales": [
+    {
+     "ident": "SBCW_18F",
+     "bas_valeur": 0,
+     "bas_unite": "SFC",
+     "haut_valeur": 999,
+     "haut_unite": "FL",
+     "texte": "SFC0-FL999",
+     "emenda": "2026-10-01Z"
+    }
+   ]
   }
  ],
  "fir_manquantes": [],
- "afrique_iso": [
-  "AO",
-  "BF",
-  "BI",
-  "BJ",
-  "BW",
-  "CD",
-  "CF",
-  "CG",
-  "CI",
-  "CM",
-  "CV",
-  "DJ",
-  "DZ",
-  "EG",
-  "EH",
-  "ER",
-  "ET",
-  "GA",
-  "GH",
-  "GM",
-  "GN",
-  "GQ",
-  "GW",
-  "IO",
-  "KE",
-  "KM",
-  "LR",
-  "LS",
-  "LY",
-  "MA",
-  "MG",
-  "ML",
-  "MR",
-  "MU",
-  "MW",
-  "MZ",
-  "NA",
-  "NE",
-  "NG",
-  "RE",
-  "RW",
-  "SC",
-  "SD",
-  "SH",
-  "SL",
-  "SN",
-  "SO",
-  "SS",
-  "ST",
-  "SZ",
-  "TD",
-  "TF",
-  "TG",
-  "TN",
-  "TZ",
-  "UG",
-  "YT",
-  "ZA",
-  "ZM",
-  "ZW"
- ],
- "regions_iso": {
-  "ZW": "Afrique de l'Est",
-  "ZM": "Afrique de l'Est",
-  "IO": "Afrique de l'Est",
-  "SH": "Afrique de l'Ouest",
-  "UG": "Afrique de l'Est",
-  "TN": "Afrique du Nord",
-  "TG": "Afrique de l'Ouest",
-  "TZ": "Afrique de l'Est",
-  "SZ": "Afrique australe",
-  "SS": "Afrique de l'Est",
-  "SD": "Afrique du Nord",
-  "ZA": "Afrique australe",
-  "SO": "Afrique de l'Est",
-  "SL": "Afrique de l'Ouest",
-  "SC": "Afrique de l'Est",
-  "SN": "Afrique de l'Ouest",
-  "ST": "Afrique centrale",
-  "RW": "Afrique de l'Est",
-  "NG": "Afrique de l'Ouest",
-  "NE": "Afrique de l'Ouest",
-  "NA": "Afrique australe",
-  "MZ": "Afrique de l'Est",
-  "MA": "Afrique du Nord",
-  "EH": "Afrique du Nord",
-  "MU": "Afrique de l'Est",
-  "MR": "Afrique de l'Ouest",
-  "ML": "Afrique de l'Ouest",
-  "MW": "Afrique de l'Est",
-  "MG": "Afrique de l'Est",
-  "LY": "Afrique du Nord",
-  "LR": "Afrique de l'Ouest",
-  "LS": "Afrique australe",
-  "KE": "Afrique de l'Est",
-  "GW": "Afrique de l'Ouest",
-  "GN": "Afrique de l'Ouest",
-  "GH": "Afrique de l'Ouest",
-  "GM": "Afrique de l'Ouest",
-  "GA": "Afrique centrale",
-  "YT": "Afrique de l'Est",
-  "RE": "Afrique de l'Est",
-  "TF": "Afrique de l'Est",
-  "ET": "Afrique de l'Est",
-  "ER": "Afrique de l'Est",
-  "GQ": "Afrique centrale",
-  "EG": "Afrique du Nord",
-  "DJ": "Afrique de l'Est",
-  "CI": "Afrique de l'Ouest",
-  "CD": "Afrique centrale",
-  "CG": "Afrique centrale",
-  "KM": "Afrique de l'Est",
-  "TD": "Afrique centrale",
-  "CF": "Afrique centrale",
-  "CV": "Afrique de l'Ouest",
-  "CM": "Afrique centrale",
-  "BI": "Afrique de l'Est",
-  "BF": "Afrique de l'Ouest",
-  "BW": "Afrique australe",
-  "BJ": "Afrique de l'Ouest",
-  "AO": "Afrique centrale",
-  "DZ": "Afrique du Nord"
+ "decompte_fir": {
+  "SBAO": 8,
+  "SBAZ": 16,
+  "SBBS": 23,
+  "SBCW": 20,
+  "SBRE": 17
  },
+ "aire_km2_masque": 22473015.8,
+ "secteurs_fusionnes_vertical": [
+  {
+   "code": "SBBS_01A",
+   "idents": [
+    "SBBS_01AL",
+    "SBBS_01AU"
+   ]
+  },
+  {
+   "code": "SBBS_01B",
+   "idents": [
+    "SBBS_01BL",
+    "SBBS_01BU"
+   ]
+  },
+  {
+   "code": "SBBS_02",
+   "idents": [
+    "SBBS_02L",
+    "SBBS_02U"
+   ]
+  },
+  {
+   "code": "SBBS_03",
+   "idents": [
+    "SBBS_03L",
+    "SBBS_03U"
+   ]
+  }
+ ],
+ "secteurs_ecartes": [
+  {
+   "code": "SBAZ_15",
+   "cellules": 31945,
+   "cellules_propres": 0
+  },
+  {
+   "code": "SBBS_07",
+   "cellules": 5345,
+   "cellules_propres": 0
+  }
+ ],
+ "bresil_iso": [
+  "BR"
+ ],
  "noms_pays": {
   "AD": "Andorre",
   "AE": "Émirats arabes unis",
@@ -1277,7 +2002,7 @@
   "CV": "Cap-Vert",
   "CW": "Curaçao",
   "CX": "Christmas Island",
-  "CY": "Chypre du Nord",
+  "CY": "Chypre",
   "CZ": "Tchéquie",
   "DE": "Allemagne",
   "DJ": "Djibouti",
@@ -1328,7 +2053,7 @@
   "IL": "Israël",
   "IM": "île de Man",
   "IN": "Inde",
-  "IO": "Territoire britannique de l'océan Indien",
+  "IO": "Territoire britannique de l’océan Indien",
   "IQ": "Irak",
   "IR": "Iran",
   "IS": "Islande",
@@ -1474,7 +2199,6 @@
   "ZM": "Zambie",
   "ZW": "Zimbabwe",
   "ZZ": "Pays inconnu",
-  "KA": "glacier de Siachen",
   "CN-TW": "Taïwan",
   "AX": "Åland"
  }
